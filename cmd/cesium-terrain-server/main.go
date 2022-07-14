@@ -15,7 +15,7 @@ l "log"
 )
 
 func main(){
-port := flag.Uint("port", 8000, "the port on which the server listens")
+port := flag.Uint("port", 8081, "the port on which the server listens")
 tilesetRoot := flag.String("dir", ".", "the root directory under which tileset directories reside")
 webRoot := flag.String("web-dir", "", "(optional) the root directory containing static files to be served")
 memcached := flag.String("memcached", "", "(optional) memcached connection string for caching tiles e.g. localhost:11211")
