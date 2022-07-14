@@ -27,7 +27,7 @@ logging := NewLogOpt()
 flag.Var(logging, "log-level", "level at which logging occurs. One of crit, err, notice, debug")
 limit := NewLimitOpt()
 limit.Set("1MB")
-flag.Var(limit, "cache-limit", the memory size in bytes beyond which resources are not cached. Other memory units can be specified by suffixing the number with kB, MB, GB or TB)
+flag.Var(limit, "cache-limit", "the memory size in bytes beyond which resources are not cached. Other memory units can be specified by suffixing the number with kB, MB, GB or TB")
 flag.Parse()
 
 // Set the logging
