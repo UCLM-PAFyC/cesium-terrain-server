@@ -1,0 +1,8 @@
+# Versión alternativa basada en geodata/cesium-terrain-server habilitando https.
+
+FROM geodata/cesium-terrain-server
+
+RUN go get github.com/UCLM-PAFyC/cesium-terrain-server/cmd/cesium-terrain-server
+COPY run /etc/sv/terrain-server/run
+RUN chmod +x /etc/sv/terrain-server/run
+
