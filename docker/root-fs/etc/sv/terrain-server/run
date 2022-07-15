@@ -45,5 +45,5 @@ exec /sbin/setuser daemon /usr/local/bin/cesium-terrain-server \
     -log-level="${LOG_LEVEL}" \
     -no-request-log="${NO_REQUEST_LOG}" \
     -pemPath="/opt" \
-    -https "true" \
+    -https="true" \
     2>&1
